@@ -1,0 +1,23 @@
+search(key,t)
+
+typekey key;
+
+patricia t;
+
+  if(t==NULL)notfound(key);
+
+  else
+
+  {
+
+  while(!IsData(t))
+
+  t=bit(t->level,key)? t->right:t->
+
+  if(key==t->k)found(t);
+
+  else notfound(key);
+
+  }
+
+};
